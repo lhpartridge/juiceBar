@@ -1,0 +1,21 @@
+:root {
+    --red: #d43e34;
+    --green: #a3c399;
+    --orange: #fca16e;
+    --lilac: #c6b7cd;
+    --white: #c3d3da;
+
+
+}
+
+section {
+    border: 2px solid green;
+}
+
+#bannerSection{
+    height:  600px;
+    background-color: var(--white);
+    background-image: url('../media/brooke-lark-08bOYnH_r_E-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
