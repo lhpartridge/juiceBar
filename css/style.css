@@ -1,21 +1,241 @@
 :root {
     --red: #d43e34;
     --green: #a3c399;
-    --orange: #fca16e;
-    --lilac: #c6b7cd;
-    --white: #c3d3da;
+    --greenText: #4ca930;
+    --greenText: #98d585; 
+    --orange: #f9945a;
+    --orangeText: #f57904;
+    --lilac: #2b0251;
+    --bottomFooter: #1c0135;
+    --white: #efefdf;
+    --barlow: 'Barlow', sans-serif;
+    --butterfly: 'Butterfly Kids', cursive;
+    --livvic: 'Livvic', sans-serif;
+    --pavanam: 'Pavanam', sans-serif;
+    --poiret: 'Poiret One', sans-serif;
+    --ruge: 'Ruge Boogie', cursive;
+    --saira: 'Saira Condensed', sans-serif;
+    --thasadith: 'Thasadith', sans-serif;
+    --zen: 'Zen Loop', cursive;
 
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 section {
-    border: 2px solid green;
+    padding: 40px 0;
+    /* border: 2px solid green; */
+}
+
+.green {
+    color: var(--greenText);
+}
+
+#headerSection {
+    padding: 0;
+    /* background-color: var(--white); */
+}
+
+.navbar {
+    /* border: 2px solid rgb(11, 10, 11); */
+}
+
+.navbar-brand {
+    font-size: 48px;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+.nav-link, .btn {
+    padding: 0 10px;
+    font-size: 28px;
+    font-family: var(--thasadith);
+    font-weight: 700;
+}
+
+.top-nav-link, .top-nav-btn {
+    background-color: var(--orange);
+    color:  var(--bottomFooter);
+    border: 1px solid var(--bottomFooter);
+    border-radius: 8px;
+}
+
+.top-nav-link:hover, .top-nav-btn:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--white);
 }
 
 #bannerSection{
-    height:  600px;
+    height:  640px;
     background-color: var(--white);
-    background-image: url('../media/brooke-lark-08bOYnH_r_E-unsplash.jpg');
+    background-image: url('../media/bg!.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.mask {
+    top:0;
+    left: 0;
+    /* z-index: 1; */
+    width: 100%;
+    height: 640px;
+    background-color: var(--green);
+    opacity: 80%;
+    border: 2px solid purple;
+}
+
+.promotions-container {
+    z-index: 0;
+}
+
+.logo-div {
+    background-color: var(--orange);
+    border-radius: 50%;
+}
+
+.logo {
+    font-family: var(--poiret);
+    font-weight: 700;
+    color: var(--bottomFooter);
+}
+
+.logo-sm {
+    /* border: 2px solid blue; */
+    
+}
+
+
+.order-btn {
+    padding: 0 30px;
+    text-align: end;
+    /* top: 150px; */
+    right: 0;
+    z-index: 1;
+    width: 200px;
+    height: 60px;
+    font-size: 28px;
+    color: white;
+    background-color: var(--orange);
+    background-image: url('../media/justJuiceLogo.PNG');
+    background-size: 40px;
     background-repeat: no-repeat;
-    background-size: contain;
+    border: 2px solid var(--bottomFooter);
+}
+
+.promotions-heading {
+    font-size: 156px;
+    font-size: calc(64px + (156 - 64) * ((100vw - 300px) / (1600 - 300)));
+    font-family: var(--ruge);
+    color: white;
+}
+
+figure {
+    margin: 0;
+    padding-top: 10px;
+    background-color: var(--white);
+    /* border: 2px solid var(--g); */
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 28px;
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 600;
+    font-family: var(--thasadith);
+    font-weight: 600;
+    color: var(--orangeText);
+
+}
+
+#productSection {
+    background-color: var(--white);
+}
+
+.product-heading {
+    color: var(--orangeText);
+    font-size: 42px;
+    font-family: var(--thasadith);
+    font-weight: 700;
+}
+
+.product-img {
+    border-radius: 8px;
+}
+
+.top-footer {
+    background-color: var(--lilac);
+}
+
+.footer-heading {
+    font-family: var(--thasadith);
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.footer-list {
+    list-style-image: url('../media/peach.png');
+}
+
+.footer-link, .contact-text, .contact-link {
+    font-size: 24px;
+    font-family: var(--thasadith);
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.contact-text {
+    line-height: 1;
+}
+
+.bottom-footer {
+    padding: 20px 0;
+    background-color: var(--bottomFooter);
+}
+
+.social-link, .footer-text, .colophon {
+    color: var(--greenText);
+}
+
+.social-link {
+    font-size: 24px;
+}
+
+/* .social-icon {
+    font-size: 48px;
+} */
+
+.colophon {
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+.colophon-text {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.copyright {
+    font-weight: 700;
+}
+
+#crowIcon {
+    margin: 10px;
+    max-width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.policies {
+    /* justify-content: center; */
 }
